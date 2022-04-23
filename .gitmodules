@@ -1,0 +1,9 @@
+[submodule "grasscutter"]
+	path = grasscutter
+	url = git@github.com:Grasscutters/Grasscutter.git
+[submodule "dimbreath"]
+	path = bin/dimbreath
+	url = git@github.com:Dimbreath/GenshinData.git
+[submodule "radioegor"]
+	path = bin/radioegor
+	url = git@github.com:radioegor146/gi-bin-output.git
