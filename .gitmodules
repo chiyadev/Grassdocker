@@ -1,5 +1,5 @@
 [submodule "grasscutter"]
-	path = grasscutter
+	path = gc
 	url = git@github.com:Grasscutters/Grasscutter.git
 [submodule "dimbreath"]
 	path = bin/dimbreath

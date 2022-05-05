@@ -1,0 +1,77 @@
+# openssl x509 -in cert.pem -noout -text > cert.out
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            61:39:ca:5f:d1:b6:73:26:d7:19:4c:a6:d6:f5:dd:73:7a:6f:0b:25
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: O = Grasscutter, CN = Grasscutter Root CA
+        Validity
+            Not Before: Apr 23 16:20:40 2022 GMT
+            Not After : Mar 30 16:20:40 2122 GMT
+        Subject: CN = Grasscutter
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:dc:a9:59:81:64:dd:5f:06:23:a3:5b:8c:cb:8f:
+                    f4:21:c7:c4:33:14:35:91:a0:ee:6a:52:72:24:87:
+                    a6:9c:0c:0a:7b:d2:86:9e:2f:4b:71:82:47:1f:eb:
+                    b9:69:02:fa:f8:0c:b0:d8:97:fd:1f:3e:1e:66:70:
+                    2a:9a:0d:4e:62:83:b4:83:45:38:17:6b:dd:73:c0:
+                    ec:5f:7f:b7:d9:5b:6a:84:f7:8b:10:78:4a:b0:41:
+                    90:f5:3e:66:18:9b:87:50:f5:b7:d0:f8:52:e0:39:
+                    a4:5a:47:6b:fd:22:ce:d5:2f:6f:74:4b:11:65:37:
+                    0a:c6:ab:3a:63:88:02:5a:9e:27:2f:90:63:e1:b7:
+                    b0:d1:77:0d:cd:d1:ae:a0:a6:ba:01:2a:53:78:42:
+                    08:41:64:1f:bd:36:87:23:a6:df:f4:b7:d6:85:e4:
+                    bb:82:aa:04:8e:ed:dc:21:49:f4:56:d8:5d:d6:a2:
+                    88:95:08:40:db:1b:c4:4f:56:6e:27:81:7c:aa:57:
+                    8d:7b:d3:5d:04:8a:17:a0:b7:bf:52:ca:5d:fa:f5:
+                    4c:d7:d3:a6:51:5e:18:5d:6c:3e:80:44:20:ed:fa:
+                    8b:63:f2:b2:10:f2:3b:67:0b:21:fa:53:83:51:0f:
+                    bb:4d:10:fc:16:bd:d0:30:61:0a:f4:55:7e:8c:c5:
+                    68:41
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                7B:E0:D8:B0:76:6E:A4:A5:7A:C5:60:A1:13:EB:BF:0F:03:83:FD:69
+            X509v3 Authority Key Identifier: 
+                keyid:60:41:B1:C8:10:9C:8E:45:94:E2:F3:A1:00:22:7A:AF:B3:DC:3F:94
+
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:mihoyo.com, DNS:*.mihoyo.com, DNS:yuanshen.com, DNS:*.yuanshen.com, DNS:hoyoverse.com, DNS:*.hoyoverse.com
+    Signature Algorithm: sha256WithRSAEncryption
+         00:b5:a1:c8:18:c4:be:5d:2f:72:01:41:31:a8:af:15:be:2e:
+         26:15:be:28:17:2e:11:f2:10:17:21:e6:63:6b:da:e1:1b:7c:
+         41:22:65:62:42:bf:7c:99:97:a2:59:b1:c0:59:3d:74:55:19:
+         9a:c1:b8:fd:f2:05:26:d5:43:6a:70:0a:1a:93:3e:86:c4:56:
+         14:1e:8a:5a:ea:10:2b:71:44:ee:da:36:03:f7:80:e4:d9:2b:
+         b9:fb:65:e7:35:2b:77:91:e6:e4:78:fc:17:ef:f1:c8:c1:da:
+         2f:47:c7:0a:7d:5f:8e:75:c3:3f:02:13:9b:29:1f:cc:1b:69:
+         c4:f5:c6:b0:62:0b:f2:ab:62:a5:42:af:74:e4:c8:29:dd:d4:
+         15:dc:dc:c7:15:de:e1:1d:78:94:f3:1b:f7:6f:77:e2:eb:cc:
+         a2:4e:02:2c:97:53:53:84:c5:54:74:92:cd:6e:d5:f3:4e:75:
+         03:aa:48:c4:85:05:5a:b5:1d:49:13:b2:b6:36:d0:fb:ee:bf:
+         4b:dd:c4:1c:cb:9c:29:4f:6c:b2:e6:8a:a9:62:50:ab:6c:2b:
+         7a:f9:c4:07:4d:0a:87:d0:27:4f:cb:63:cf:b5:99:36:3b:0b:
+         73:75:69:4a:1e:94:53:2c:08:96:f6:fb:8c:e0:68:77:7c:07:
+         8a:fa:e9:cf:7d:66:77:70:d6:b5:66:b2:6b:85:37:56:18:21:
+         85:99:f7:db:c1:94:58:a6:78:97:99:11:ca:a6:bb:53:98:68:
+         71:88:da:ae:1f:74:8b:5b:83:5c:a1:14:9b:47:30:60:7a:f1:
+         2a:8e:da:d8:9e:c0:7d:fd:69:bb:3c:03:50:10:29:c6:e4:65:
+         ec:b3:87:9f:0e:b8:d4:2d:32:2d:4b:3e:65:3f:93:b7:a1:e3:
+         bc:b7:c4:d8:02:47:f0:42:f7:ff:ef:ec:92:fd:fd:e6:b8:76:
+         e5:7f:b2:68:93:83:99:fd:af:63:9c:ce:a6:36:53:e7:73:f6:
+         44:88:ff:ff:7e:f5:c7:91:ea:c3:c9:2d:ab:7f:44:9a:2f:b1:
+         7f:f6:6b:df:71:21:52:0f:b9:33:93:df:4e:bc:4c:2b:e4:7b:
+         66:93:42:31:30:bf:4b:7f:9f:75:37:98:bb:a5:3e:e3:01:70:
+         c8:18:47:28:80:0a:3f:88:30:cc:ed:2c:46:03:a4:44:87:c5:
+         bd:63:11:bf:d4:e4:e4:22:24:74:31:f7:9e:33:06:25:aa:6e:
+         0e:6d:f3:ca:2d:9a:fc:9c:cf:b4:42:31:36:51:0b:77:c0:75:
+         b7:5a:15:98:40:1a:04:88:0c:83:1f:6e:25:4e:02:ba:13:80:
+         79:fc:f0:16:4a:93:b5:c7
