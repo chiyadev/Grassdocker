@@ -33,7 +33,6 @@ Running this Docker image is very simple. Refer to [this script](server.sh) or t
 ## Connecting
 
 1. Import the [root certificate](certs/root.pem) that comes with this repository into the client's trusted certificate authority store.
-
 2. Follow the Grasscutter [connection guide][3] as usual.
 
 [1]: https://docs.docker.com/engine/reference/builder/
