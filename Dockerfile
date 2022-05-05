@@ -13,6 +13,7 @@
 FROM openjdk:18-slim-buster as build
 WORKDIR /gc
 
+# build grasscutter
 COPY ./gc ./
 RUN chmod +x gradlew && ./gradlew jar
 
@@ -22,6 +23,7 @@ WORKDIR /gc
 RUN apt-get update
 RUN apt-get -y install tini
 
+# add resources first: allow docker to cache this layer for reuse
 COPY ./bin/dimbreath/TextMap ./resources/TextMap
 COPY ./bin/dimbreath/Subtitle ./resources/Subtitle
 COPY ./bin/dimbreath/Readable ./resources/Readable

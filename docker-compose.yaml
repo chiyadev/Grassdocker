@@ -1,0 +1,37 @@
+# This compose file is provided as an example. It should be modified according to your setup.
+version: "3.9"
+services:
+  mongo:
+    image: mongo:focal
+    ports:
+      - 27017:27017/tcp
+    volumes:
+      - ./path/to/db:/data/db
+
+  gc:
+    image: grassdocker:latest
+
+    # to run commands: docker attach --detach-keys='ctrl-c'
+    tty: true
+    stdin_open: true
+
+    ports:
+      # port 80 for HTTP connection (not necessary unless HTTPS is disabled)
+      - 80:80/tcp
+      # port 443 for HTTPS connection
+      - 443:443/tcp
+      # port 22102 for KCP connection
+      - 22102:22102/udp
+
+    volumes:
+      # NOTE: create config.json first: {"DatabaseUrl":"mongodb://mongo:27017","GameServer":{"DispatchServerDatabaseUrl":"mongodb://mongo:27017"}}
+      - ./path/to/config.json:/gc/config.json
+      # server cert may be overridden if desired
+      - ./path/to/cert.p12:/gc/keystore.p12
+      # game data may be modified if desired
+      - ./path/to/banners.json:/gc/data/Banners.json
+      - ./path/to/shop.json:/gc/data/Shop.json
+
+    links:
+      # allow grasscutter to connect to mongodb
+      - mongo
