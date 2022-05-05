@@ -1,9 +1,9 @@
 [submodule "grasscutter"]
 	path = gc
-	url = git@github.com:Grasscutters/Grasscutter.git
+	url = https://github.com/Grasscutters/Grasscutter.git
 [submodule "dimbreath"]
 	path = bin/dimbreath
-	url = git@github.com:Dimbreath/GenshinData.git
+	url = https://github.com/Dimbreath/GenshinData.git
 [submodule "radioegor"]
 	path = bin/radioegor
-	url = git@github.com:zhsitao/gi-bin-output.git
+	url = https://github.com/zhsitao/gi-bin-output.git

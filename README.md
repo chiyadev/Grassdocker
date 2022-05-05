@@ -17,7 +17,7 @@ I do not provide any prebuilt Docker image on Docker Hub at the moment.
 1. Clone the repository with all required submodules.
 
 ```sh
-git clone --recurse-submodules -j8 git@github.com:chiyadev/Grassdocker.git
+git clone --recurse-submodules -j8 https://github.com/chiyadev/Grassdocker.git
 ```
 
 2. Run the build script with the image name. "grassdocker" is provided as an example which can be changed.
