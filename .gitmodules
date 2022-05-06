@@ -7,3 +7,6 @@
 [submodule "radioegor"]
 	path = bin/radioegor
 	url = https://github.com/zhsitao/gi-bin-output.git
+[submodule "losttree"]
+	path = bin/losttree
+	url = https://github.com/TheLostTree/AnimeGirlsHoldingFunctionalProgrammingFiles.git
