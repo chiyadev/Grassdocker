@@ -1,12 +1,6 @@
 [submodule "grasscutter"]
 	path = gc
 	url = https://github.com/Grasscutters/Grasscutter.git
-[submodule "dimbreath"]
-	path = bin/dimbreath
-	url = https://github.com/Dimbreath/GenshinData.git
-[submodule "radioegor"]
-	path = bin/radioegor
-	url = https://github.com/zhsitao/gi-bin-output.git
-[submodule "losttree"]
-	path = bin/losttree
-	url = https://github.com/TheLostTree/AnimeGirlsHoldingFunctionalProgrammingFiles.git
+[submodule "kokoboya"]
+	path = bin/kokoboya
+	url = https://github.com/Koko-boya/Grasscutter_Resources.git

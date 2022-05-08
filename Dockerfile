@@ -21,15 +21,7 @@ FROM openjdk:18-slim-buster
 WORKDIR /gc
 
 # add resources first: allow docker to cache this layer for reuse
-COPY ./bin/dimbreath/TextMap ./resources/TextMap
-COPY ./bin/dimbreath/Subtitle ./resources/Subtitle
-COPY ./bin/dimbreath/Readable ./resources/Readable
-COPY ./bin/radioegor/2.5.52/Data/_BinOutput ./resources/BinOutput
-COPY ./bin/dimbreath/ExcelBinOutput ./resources/ExcelBinOutput
-COPY ./bin/losttree/DecompiledLua/Lua ./resources/Scripts
-
-# add fixed excels
-COPY ./bin/*ExcelConfigData.json ./resources/ExcelBinOutput/
+COPY ./bin/kokoboya/Resources ./resources
 
 COPY ./certs/cert.p12 ./keystore.p12
 COPY ./gc/keys ./keys
