@@ -31,14 +31,24 @@ COPY ./bin/losttree/DecompiledLua/Lua ./resources/Scripts
 # add fixed excels
 COPY ./bin/*ExcelConfigData.json ./resources/ExcelBinOutput/
 
+RUN \
+  apt-get update && \
+  apt-get -y install tini locales && \
+  rm -rf /var/lib/apt/lists/*
+
+# https://stackoverflow.com/a/28406007
+RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen
+
 COPY ./certs/cert.p12 ./keystore.p12
 COPY ./gc/keys ./keys
 COPY ./gc/data ./data
 
-RUN apt-get update
-RUN apt-get -y install tini
-
 COPY --from=build /gc/grasscutter-*.jar ./grasscutter.jar
+
+ENV \
+  LANG="en_US.UTF-8" \
+  LANGUAGE="en_US:en" \
+  LC_ALL="en_US.UTF-8"
 
 EXPOSE 443/tcp 22102/udp
 ENTRYPOINT ["/usr/bin/tini", "--", "java", "-jar", "/gc/grasscutter.jar"]

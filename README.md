@@ -1,3 +1,5 @@
+**Note**: Updates to this repository is temporarily suspended until [this issue](https://github.com/Grasscutters/Grasscutter/issues/686) is addressed.
+
 # Grassdocker
 
 This repository provides a [Dockerfile][1] that can be used to build a completely self-contained Docker image for [Grasscutter][2]. It tracks the **development branch** and is confirmed to be working with Genshin 2.6.
