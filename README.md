@@ -1,4 +1,6 @@
-**Note**: Updates to this repository is temporarily suspended until [this issue](https://github.com/Grasscutters/Grasscutter/issues/686) is addressed.
+**Note**: This repository is no longer maintained.
+
+~~**Note**: Updates to this repository is temporarily suspended until [this issue](https://github.com/Grasscutters/Grasscutter/issues/686) is addressed.~~
 
 # Grassdocker
 
